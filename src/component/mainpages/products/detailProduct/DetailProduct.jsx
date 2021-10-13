@@ -196,8 +196,7 @@ function DetailProduct(props) {
                             <span onClick={handleDestroy}>X</span>
                         </div> */}
 
-                        <div className="upload detail">
-                            <img src={detailProduct.images.secure_url} alt="" />
+                        <div className="upload">
                             <input type="file" name="file" id="file_up" onChange={handleUpload} />
                             {
                                 loading ? <div id="file_img"><Loading /></div>
