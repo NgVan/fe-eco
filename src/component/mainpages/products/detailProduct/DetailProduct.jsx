@@ -197,7 +197,9 @@ function DetailProduct(props) {
                         </div> */}
 
                         <div className="upload">
-                            <input type="file" name="file" id="file_up" onChange={handleUpload}/>
+                            <input type="file" name="file" id="file_up" onChange={handleUpload}>
+                                <img src={detailProduct.images.secure_url} alt="" />
+                            </input>
                             {
                                 loading ? <div id="file_img"><Loading /></div>
 
