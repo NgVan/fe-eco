@@ -1,0 +1,17 @@
+export const AUTH_SIGN_UP = 'AUTH_SIGN_UP'
+export const AUTH_REGISTER = 'AUTH_REGISTER'
+export const AUTH_SIGN_OUT = 'AUTH_SIGN_OUT'
+export const AUTH_SIGN_IN = 'AUTH_SIGN_IN'
+export const AUTH_ERROR = 'AUTH_ERROR'
+export const DASHBOARD_GET_DATA = 'DASHBOARD_GET_DATA'
+
+export const ADD_PRODUCT = 'ADD_PRODUCT'
+export const GET_PRODUCT = 'GET_PRODUCT'
+export const EDIT_PRODUCT = 'EDIT_PRODUCT'
+export const ACTIVE_PRODUCT ='ACTIVE_PRODUCT'
+export const DELETE_PRODUCT ='DELETE_PRODUCT'
+
+export const ADD_CATEGORY = 'ADD_CATEGORY'
+export const GET_CATEGORY = 'GET_CATEGORY'
+export const EDIT_CATEGORY = 'EDIT_CATEGORY'
+

@@ -1,0 +1,19 @@
+.category {
+
+}
+
+.category input {
+    /* background-color:rgb(186, 206, 189);
+    color:brown;
+    text-align: center; */
+    text-align: justify;
+
+    border-radius: 5px;
+    margin-bottom: 2px;
+
+    height: 40px;
+    width: 700px;
+}
+.category input.text {
+    margin-left: 50px;
+}

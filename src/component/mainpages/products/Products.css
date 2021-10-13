@@ -1,0 +1,20 @@
+tbody.product-list {
+
+}
+
+tbody.product-list > tr > td {
+    cursor: pointer;
+    transition: all .35s ease-in-out 0s;
+}
+
+tbody.product-list > tr > td.active {
+    color: deeppink
+}
+
+tbody.product-list > tr > td.img {
+
+        max-width: 2px;
+        max-height: 2px;
+        height: auto;
+        width: auto;
+}
