@@ -6,13 +6,13 @@ const HeaderMain = () => {
         <nav className="navbar navbar-expand-sm navbar-dark bg-success" style = {{marginBottom: '10px'}}>
            <ul className="navbar-nav mr-auto">
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="/Dashboard">Homepage</Link>
+                    <Link className="nav-link text-white" to="/Dashboard"><h6>Homepage</h6></Link>
                 </li>
             </ul> 
             
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown">
-                    <h5 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Setting</h5>
+                    <h6 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Setting</h6>
                     <ul className="dropdown-menu" role="listbox">
                         <li><Link to="Store_management" role="option">Store management</Link></li>
                         <li><Link to="Notification" role="option">Notification</Link></li>
@@ -23,7 +23,7 @@ const HeaderMain = () => {
             
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown">
-                    <h5 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Maganement and Operation</h5>
+                    <h6 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Maganement and Operation</h6>
                     <ul className="dropdown-menu" role="listbox">
                         <li><Link to="Order" role="option">Oder management</Link></li>
                         <li><Link to="Product" role="option">Product management</Link></li>
@@ -34,7 +34,7 @@ const HeaderMain = () => {
             
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown">
-                    <h5 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Report</h5>
+                    <h6 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Report</h6>
                     <ul className="dropdown-menu" role="listbox">
                         <li><Link to="Report_order" role="option">Order detail</Link></li>
                         <li><Link to="Report_product" role="option">Sale by product</Link></li>
