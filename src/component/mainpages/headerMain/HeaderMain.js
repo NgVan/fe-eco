@@ -12,7 +12,7 @@ const HeaderMain = () => {
             
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown">
-                    <Link className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Setting</Link>
+                    <h5 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Setting</h5>
                     <ul className="dropdown-menu" role="listbox">
                         <li><Link to="Store_management" role="option">Store management</Link></li>
                         <li><Link to="Notification" role="option">Notification</Link></li>
@@ -23,7 +23,7 @@ const HeaderMain = () => {
             
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown">
-                    <Link className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Maganement and Operation</Link>
+                    <h5 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Maganement and Operation</h5>
                     <ul className="dropdown-menu" role="listbox">
                         <li><Link to="Order" role="option">Oder management</Link></li>
                         <li><Link to="Product" role="option">Product management</Link></li>
@@ -34,7 +34,7 @@ const HeaderMain = () => {
             
             <ul className="navbar-nav mr-auto">
                 <li className="nav-item dropdown">
-                    <Link className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Report</Link>
+                    <h5 className="nav-link text-white dropdown-toggle"  data-toggle="dropdown" >Report</h5>
                     <ul className="dropdown-menu" role="listbox">
                         <li><Link to="Report_order" role="option">Order detail</Link></li>
                         <li><Link to="Report_product" role="option">Sale by product</Link></li>
