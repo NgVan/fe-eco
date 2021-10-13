@@ -198,7 +198,7 @@ function SignUp(props) {
                         Sign in with third-party services
                     </div>
                     <FacebookLogin 
-                        appId="357177895809731"
+                        appId="981800162638146"
                         textButton="Facebook"
                         fields="name,email,picture"
                         callback={responseFacebook}
