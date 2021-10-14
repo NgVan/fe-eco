@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useHistory } from "react-router-dom";
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import axios from 'axios';
 import HeaderMain from '../../headerMain/HeaderMain';
 import './detailProduct.css'
-import { EDIT_PRODUCT } from '../../../../actions/types';
+//import { EDIT_PRODUCT } from '../../../../actions/types';
 import { editProduct } from '../../../../actions/productActions';
 import Loading from '../../utils/loading/Loading'
 import { useDispatch } from 'react-redux';
@@ -84,9 +84,9 @@ function DetailProduct(props) {
     function handleCancel() {
         history.push("/Product")
     }
-    function handleUpdate() {
-        history.push("/Product")
-    }
+    // function handleUpdate() {
+    //     history.push("/Product")
+    // }
 
     const handleUpload = async e =>{
         e.preventDefault()

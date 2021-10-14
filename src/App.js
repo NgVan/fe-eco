@@ -22,7 +22,7 @@ import Category from "./component/mainpages/admin/merchandise/category/Category"
 import NotFound from "./component/mainpages/utils/not_found/NotFound"
 
 
-import authGuard from './component/HOCs/authGuard'
+//import authGuard from './component/HOCs/authGuard'
 
 import {useSelector} from 'react-redux'
 

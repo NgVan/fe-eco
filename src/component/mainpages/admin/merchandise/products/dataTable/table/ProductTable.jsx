@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from '@fortawesome/fontawesome-svg-core'
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { library } from '@fortawesome/fontawesome-svg-core'
 import PropTypes from 'prop-types';
 
 ProductTable.propTypes = {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import axios from 'axios'
 
 import "./auth.css"

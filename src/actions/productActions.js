@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { useDispatch } from 'react-redux'
+//import { useDispatch } from 'react-redux'
 import { 
     ADD_PRODUCT,
     EDIT_PRODUCT,
@@ -14,12 +14,11 @@ export const getPros = (queryString) => async dispatch => {
         console.log("GET PROD: ")
         const res = await axios.get(`${server_URL}/api/product?${queryString}`)
         console.log("PRODUCT RES: ", res.data)
-        const { products, paginatingProducts, pagination } = res.data
+        const { paginatingProducts } = res.data
             dispatch({
                 type: GET_PRODUCT,
                 payload: paginatingProducts
             })
-        // return pagination
     } catch (error) {
         console.log("ERROR: ", error)
     }

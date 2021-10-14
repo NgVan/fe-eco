@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios'
@@ -33,16 +33,6 @@ function Category(props) {
 
     const categoriesList = useSelector(state => state.category.categories)
 
-
-    const deleteButtonStyle = {
-        background: '#ff0000',
-        color: '#fff',
-        border: 'none',
-        padding: '5px 9px',
-        borderRadius: '50%',
-        cursor: 'pointer',
-        float: 'right'
-      }
     return (
         <div>
             <HeaderMainAdmin />

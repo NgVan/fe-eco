@@ -1,13 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import Select from 'react-select';
+//import Select from 'react-select';
 import axios from 'axios'
 import queryString from 'query-string'
 
 import { addProduct, getPros } from '../../../../actions/productActions';
-import { GET_CATEGORY } from '../../../../actions/types';
+//import { GET_CATEGORY } from '../../../../actions/types';
 import HeaderMain from '../../headerMain/HeaderMain';
 import Loading from '../../utils/loading/Loading'
 import './createProduct.css'

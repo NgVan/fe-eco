@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+//import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
 import queryString from 'query-string'
 import axios from 'axios'
 
 import { GET_PRODUCT } from '../../../actions/types';
-import { changeStatusProduct, deleteProduct, getPros } from '../../../actions/productActions';
+import { changeStatusProduct, deleteProduct } from '../../../actions/productActions';
 import ProductTable from './dataTable/table/ProductTable';
 import HeaderMain from '../headerMain/HeaderMain';
 import ProductHeader from './header/ProductHeader';
@@ -57,7 +57,7 @@ function Products(props) {
             //dispatch(getProducts(paramString));
             const res = await axios.get(`${server_URL}/api/product?${paramString}`)
             console.log("PRODUCT RES: ", res.data)
-            const { products, paginatingProducts, pagination } = res.data
+            const { paginatingProducts, pagination } = res.data
             dispatch({
                 type: GET_PRODUCT,
                 payload: paginatingProducts
@@ -81,7 +81,7 @@ function Products(props) {
 
     async function handleDEleteProduct(product) {
         const r = window.confirm("Do you want to delete product?")
-        if (r == true) {
+        if (r === true) {
             console.log("PRODUCT WANT DEL: ", product)
             await dispatch(deleteProduct(product))
             setFilters ( {

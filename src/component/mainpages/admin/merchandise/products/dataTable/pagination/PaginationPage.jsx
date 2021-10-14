@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import Pagination from 'react-bootstrap/Pagination';
 
@@ -13,7 +13,7 @@ PaginationPage.defaultProps = {
 
 function PaginationPage(props) {
     const { pagination, onPageChange } = props;
-    const {page, limit, totalRows, totalPagiRows } = pagination;
+    const {page, limit, totalRows} = pagination;
 
     const totalPages = Math.ceil(totalRows / limit);
 

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 import {useSelector, useDispatch} from 'react-redux'
@@ -8,7 +8,7 @@ import FacebookLogin from 'react-facebook-login';
 import GoogleLogin from 'react-google-login';
 
 import {isEmail} from "../utils/validation/Validation"
-import {showErrMsg, showSuccessMsg} from "../utils/notification/Notification"
+import {showErrMsg} from "../utils/notification/Notification"
 
 import {
     AUTH_SIGN_UP, 
@@ -30,7 +30,7 @@ function SignIn(props) {
     const dispatch = useDispatch();
 
     const [user, setUser] = useState(initialState);
-    const {email, password, err, success} = user;
+    const {email, password, err} = user;
 
      const auth = useSelector(state => state.auth);
      const {errorMessage} = auth;

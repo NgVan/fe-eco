@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {useParams} from 'react-router-dom';
-import PropTypes from 'prop-types';
+//import {useParams} from 'react-router-dom';
+//import PropTypes from 'prop-types';
 import axios from 'axios'
 
 import {isLength, isMatch} from "../utils/validation/Validation"

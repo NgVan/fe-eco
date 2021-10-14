@@ -11,9 +11,11 @@ const jwtToken = localStorage.getItem("JWT_TOKEN")
 
 const INITIAL_STATE = {
     auth : {
-        token : jwtToken,
+        token : "",
         isAuthenticated : jwtToken ? true: false,
-        
+        isAdmin: false,
+        errorMessage: "",
+        successMessage: ""
     }
 }
 
@@ -27,7 +29,7 @@ const persistedReducer = persistReducer(persistConfig, reducers)
 
 const store = createStore(
     persistedReducer,
-    //INITIAL_STATE,
+    INITIAL_STATE,
     composeWithDevTools(
         applyMiddleware(reduxThunk)
         // other store enhancers if any
